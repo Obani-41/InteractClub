@@ -5,7 +5,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
 
 :root {
-  --orange: #f9713d;
+  --Royalblue:#17458f;  /*for headers, main nav*/
+  --RotaryGold:#f7a81b; /*for accent highlights,buttons and key messages*/
+  --Azure:#0067c8; /*for subheadings or specific sections*/
+  --SkyBlue:#00aced; /*for links, icons*/
+  --White: #ffffff; /*for clean backgrounds and making content legible*/
+  --Charcoal: #54565a;/*for text, icons, and subtle elements*/
+  --Silver: #d0cfcd; /*for borders, dividers, and secondary elements*/
+  --Smoke: #b1b1b1; /*for backgrounds, hover effects, and subtle highlights*/
+  --Turquoise: #00adbb; /*for buttons, links, and interactive elements*/
+  --orange: #020202;
   --red: #eb3750;
   --grey: #252429;
 }
@@ -25,7 +34,7 @@ html {
 body {
   font-family: "Roboto", sans-serif !important;
   overflow-x: hidden;
-  background-color: var(--grey) !important;
+  background-color: var(--White) !important;
   font-family: "Exo", sans-serif;
 }
 .context {
@@ -36,7 +45,7 @@ body {
 
 .context h1 {
   text-align: center;
-  color: #fff;
+  color: black;
   font-size: 50px;
 }
 
@@ -62,7 +71,7 @@ body {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--Smoke);
   animation: animate 25s linear infinite;
   animation-direction: reverse;
   bottom: -150px;
@@ -158,7 +167,7 @@ body {
 }
 nav {
   display: flex;
-  background-color: black;
+  background-color: var(--White);
   justify-content: space-between;
   align-items: center;
   padding: 10px;
@@ -180,10 +189,10 @@ nav {
 
 .navbars li a {
   text-decoration: none;
-  color: white;
+  color: var(--SkyBlue  );
 }
 .navbars li a:hover {
-  color: var(--red);
+  color: var(--SkyBlue  );
   transition: 500ms;
 }
 .hover-line::after {
@@ -191,7 +200,7 @@ nav {
   display: block;
   width: 0%;
   height: 2px;
-  background-color: var(--red);
+  background-color: var(--RotaryGold);
   transition: width 0.3s;
   text-align: center;
 }
@@ -219,7 +228,7 @@ nav {
   text-decoration: none !important;
 }
 .header {
-  font-family: "Dancing Script", cursive;
+  font-family: "Arial Rounded MT", cursive;
   font-weight: 600;
   font-size: 2.1em;
   padding-left: 10px;
@@ -229,9 +238,12 @@ nav {
   padding-top: 4px;
 }
 
+.subtitles{
+  color: #00adbb;
+}
 footer {
   text-align: center;
-  background-color: black;
+  background-color: var(--Royalblue);
   color: white;
   padding: 20px;
 }
@@ -240,7 +252,7 @@ footer i {
   margin: 20px 10px 10px 10px;
 }
 footer a {
-  color: gray;
+  color: var(--White);
 }
 #home_welcome {
   height: 100vh;
@@ -274,7 +286,7 @@ footer a {
   justify-content: space-between;
 }
 h1 {
-  color: #eb3750;
+  color: var(--RotaryGold);
 }
 .content {
   min-width: 49%;
@@ -306,7 +318,7 @@ h1 {
   }
   #hackclub {
     font-size: 10em;
-    color: var(--red);
+    color: var(--RotaryGold);
     font-family: "Londrina Outline", cursive;
     font-weight: bold;
   }
@@ -926,7 +938,7 @@ h1 {
   #hackclub {
     /* text-align: center; */
     font-size: 5em;
-    color: var(--red);
+    color: var(--Rotaryblue);
     font-family: "Londrina Outline", cursive;
     font-weight: bold;
   }
