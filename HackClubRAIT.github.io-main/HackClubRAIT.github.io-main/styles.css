@@ -515,6 +515,7 @@ h1 {
   padding: 10px;
 }
 .g1 a {
+  color: var(--RotaryGold);
   margin-bottom: 5px;
   text-align: left;
   text-decoration: none;
@@ -523,6 +524,14 @@ h1 {
   margin-bottom: 5px;
   text-align: left;
   text-decoration: none;
+}
+.g1 a:hover {
+  color: var(--Brick-red);
+  text-decoration: underline;
+}
+.g2 a:hover {
+  color: var(--Brick-red);
+  text-decoration: underline;
 }
 /* Reposive footer code begins from here  */
 @media (max-width: 1200px) {
@@ -795,7 +804,6 @@ h1 {
   font-weight: bold;
   font-size: 3rem;
   color: var(--RotaryGold);
-  background-color: var(--Silver);
   text-shadow: none;
   margin-bottom: 20px;
 }
@@ -870,7 +878,7 @@ h1 {
   transition: 0.9s;
   transform: scale(1.4);
 }
-#team_img .fa-github:hover {
+#team_img .fa-youtube:hover {
   /* background: -moz-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
   background: -webkit-linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
   background: linear-gradient(45deg, #9c2bff  0%,#248aff 25%,#26ebe1 50%,#1cd91c 75%,#26bc18 100%); 
