@@ -14,6 +14,10 @@
   --Silver: #d0cfcd; /*for borders, dividers, and secondary elements*/
   --Smoke: #b1b1b1; /*for backgrounds, hover effects, and subtle highlights*/
   --Turquoise: #00adbb; /*for buttons, links, and interactive elements*/
+  --Greenish: #009793; /*for success messages, notifications, and highlights*/
+  --Baby-pink: #F7B6AF; /*for soft accents, backgrounds, and highlights*/
+  --Brick-red: #E95D3F; /*for error messages, warnings, and alerts*/
+  --Blueish: #21759B; /*for links, buttons, and interactive elements*/
   --orange: #020202;
   --red: #eb3750;
   --grey: #252429;
@@ -192,7 +196,7 @@ nav {
   color: var(--SkyBlue  );
 }
 .navbars li a:hover {
-  color: var(--SkyBlue  );
+  color: var(--orange  );
   transition: 500ms;
 }
 .hover-line::after {
@@ -578,8 +582,8 @@ h1 {
   justify-content: center;
   text-align: center;
   background-color: white;
-  background: linear-gradient(#eb3755dc, #2b2a2aee);
-  color: white;
+  background: linear-gradient(#00adbb,  #21759B);
+  color: var(--RotaryGold);
   border-radius: 10px;
   width: auto;
   z-index: 99999;
@@ -709,8 +713,8 @@ h1 {
 
 #projects {
   /* height: 354px; */
-  background-color: #080b5280;
-  color: #eb374faf;
+  background-color: var(--Royalblue);
+  color: var(--RotaryGold);
   /* margin: 40px;
   padding: 20px; */
   text-align: center;
@@ -783,6 +787,17 @@ h1 {
 }
 .owner {
   text-decoration: none;
+}
+
+/*-----------------Project hero-----------------*/
+.hero, .project_svg_section, p{
+  font-family: "Londrina Outline", cursive;
+  font-weight: bold;
+  font-size: 3rem;
+  color: var(--RotaryGold);
+  background-color: var(--Silver);
+  text-shadow: none;
+  margin-bottom: 20px;
 }
 /*-----------------opportunity-----------------*/
 .opportunity .row {
@@ -1009,7 +1024,7 @@ h1 {
     margin-left: 60px !important;
   }
   .project_svg_text h4{
-    font-size: 25px !important;
+    font-size: 50px !important;
   }
   /*-------opportunity-------*/
   .opportunity .row{
